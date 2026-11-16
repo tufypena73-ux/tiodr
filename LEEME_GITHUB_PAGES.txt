@@ -1,0 +1,21 @@
+TIODR - VERSION PARA GITHUB PAGES
+
+CAMBIOS (solo estructura de despliegue; contenido, diseno, URLs, sitemap y robots.txt sin tocar)
+- Agregado CNAME con: www.tiodr.site   (dominio personalizado principal)
+- edgeone.json y middleware.js movidos a _respaldo-edgeone/ (GitHub Pages/Jekyll ignora carpetas con "_",
+  asi no se publican). Para volver a EdgeOne, devolverlos a la raiz.
+
+PERDIDO AL SALIR DE EDGEONE (GitHub Pages no lo soporta)
+- Cabeceras de seguridad y de cache (X-Frame-Options, Cache-Control, etc.)
+- 410 Gone para /dramas, /drama, /admin: ahora devolveran 404.
+
+PASOS
+1. Crear repositorio, subir el CONTENIDO de esta carpeta a la raiz de la rama main.
+2. Settings > Pages: Source = Deploy from a branch (main, /root). Custom domain = www.tiodr.site. Activar Enforce HTTPS cuando este disponible.
+3. DNS (GoDaddy), ANTES borrar el reenvio de dominio y registros A/AAAA/CNAME viejos de @ y www:
+   - A    @    185.199.108.153 / 185.199.109.153 / 185.199.110.153 / 185.199.111.153
+   - AAAA @    2606:50c0:8000::153 / 8001::153 / 8002::153 / 8003::153   (opcional)
+   - CNAME www <usuario>.github.io   (sin nombre de repositorio)
+   Los registros de Zoho Mail (MX, SPF, DKIM, DMARC) NO se tocan.
+4. Con ambos DNS correctos, GitHub crea solo la redireccion tiodr.site -> www.tiodr.site.
+5. Probar: curl -sI https://tiodr.site/robots.txt  (esperado: 301 a https://www.tiodr.site/robots.txt)

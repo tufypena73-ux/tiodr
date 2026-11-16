@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<script data-blockingmode="auto" data-cbid="eee4be27-d2bf-48fd-baf1-170a85f7ed45" data-culture="es" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" type="text/javascript"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Generador de Contraseñas Seguras Online | TIODR</title>
+<meta content="Genera contraseñas aleatorias de 15 a 64 caracteres con la criptografía de tu navegador. Elige mayúsculas, números y símbolos. Gratis y sin registro." name="description"/>
+<meta content="generador de contraseñas, contraseñas seguras, crear contraseña aleatoria, generador passwords, contraseña fuerte online" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.tiodr.site/generador-contrasenas.html" rel="canonical"/>
+<meta content="Generador de Contraseñas Seguras Online | TIODR" property="og:title"/>
+<meta content="Genera contraseñas aleatorias de 15 a 64 caracteres con la criptografía de tu navegador. Elige mayúsculas, números y símbolos. Gratis y sin registro." property="og:description"/>
+<meta content="https://www.tiodr.site/generador-contrasenas.html" property="og:url"/>
+<meta content="TIODR" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.tiodr.site/img/og-tiodr.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://www.tiodr.site/img/og-tiodr.png" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Generador de Contraseñas Seguras Online | TIODR" name="twitter:title"/>
+<meta content="Genera contraseñas aleatorias de 15 a 64 caracteres con la criptografía de tu navegador. Elige mayúsculas, números y símbolos. Gratis y sin registro." name="twitter:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    .pwd-output-box {
+      background: var(--bg-tertiary);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    #pwd-output {
+      flex: 1;
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      word-break: break-all;
+      letter-spacing: 0.04em;
+    }
+    .pwd-strength-wrap {
+      margin-bottom: 16px;
+    }
+    .pwd-strength-track {
+      height: 6px;
+      background: var(--border);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+    #pwd-strength-bar {
+      height: 100%;
+      width: 0;
+      border-radius: var(--radius-full);
+      transition: width .4s ease, background .4s ease;
+    }
+    .pwd-strength-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: .8125rem;
+    }
+    .pwd-checkbox-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .pwd-checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+    .pwd-checkbox-item:hover { border-color: var(--primary); background: var(--primary-light); }
+    .pwd-checkbox-item input[type="checkbox"] { accent-color: var(--primary); width: 16px; height: 16px; cursor: pointer; }
+    .pwd-length-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .pwd-length-row input[type="range"] {
+      flex: 1;
+      accent-color: var(--primary);
+      height: 6px;
+      cursor: pointer;
+    }
+    #pwd-length-display {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 36px;
+      text-align: center;
+    }
+    .btn-group { display: flex; gap: 10px; flex-wrap: wrap; }
+  </style>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Generador de Contraseñas Seguras","description":"Genera contraseñas seguras y aleatorias online. Personaliza longitud y tipos de caracteres. Gratis, sin registro ni almacenamiento.","url":"https://www.tiodr.site/generador-contrasenas.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.tiodr.site/"},{"@type":"ListItem","position":2,"name":"Herramientas","item":"https://www.tiodr.site/herramientas.html"},{"@type":"ListItem","position":3,"name":"Generador de Contraseñas","item":"https://www.tiodr.site/generador-contrasenas.html"}]}
+  </script>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Es seguro generar contraseñas en TIODR?","acceptedAnswer":{"@type":"Answer","text":"Sí. El generador utiliza la API Web Crypto del navegador (crypto.getRandomValues), que es criptográficamente segura. Las contraseñas se generan completamente en tu dispositivo y nunca se envían a ningún servidor."}},{"@type":"Question","name":"¿Qué longitud debe tener una contraseña segura?","acceptedAnswer":{"@type":"Answer","text":"Se recomienda un mínimo de 12 caracteres para cuentas normales y 16 o más para cuentas críticas como banca o correo electrónico. Cuanto más larga, más difícil de descifrar."}}]}
+  </script>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/img/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/img/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+</head>
+<body>
+<header class="site-header" role="banner">
+<div class="container"><div class="header-inner">
+<a aria-label="TIODR - Inicio" class="logo" href="index.html"><img alt="TIODR — Herramientas digitales gratuitas" class="logo-image" decoding="async" fetchpriority="high" height="48" src="/img/logo-header.webp" width="100"/></a>
+<nav aria-label="Navegación principal" class="main-nav">
+<a class="nav-link" href="index.html">Inicio</a>
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" type="button">Herramientas <span class="chevron">▾</span></button>
+<div class="dropdown-menu" role="menu">
+<a class="dropdown-item" href="calculadora-de-edad.html" role="menuitem"><span class="di-icon">🎂</span> Calculadora de Edad</a>
+<a class="dropdown-item" href="calculadora-de-porcentajes.html" role="menuitem"><span class="di-icon">📊</span> Calculadora de Porcentajes</a>
+<a class="dropdown-item" href="calculadora-de-descuentos.html" role="menuitem"><span class="di-icon">🏷️</span> Calculadora de Descuentos</a>
+<a class="dropdown-item" href="calculadora-de-iva.html" role="menuitem"><span class="di-icon">🧾</span> Calculadora de IVA e ITBIS</a>
+<a class="dropdown-item" href="generador-qr.html" role="menuitem"><span class="di-icon">📱</span> Generador QR</a>
+<a class="dropdown-item" href="generador-contrasenas.html" role="menuitem"><span class="di-icon">🔐</span> Generador de Contraseñas</a>
+<a class="dropdown-item" href="contador-de-caracteres.html" role="menuitem"><span class="di-icon">🔢</span> Contador de Caracteres</a>
+<a class="dropdown-item" href="conversor-de-texto.html" role="menuitem"><span class="di-icon">✍️</span> Conversor de Texto</a>
+<a class="dropdown-item" href="herramientas.html" role="menuitem"><span class="di-icon">🧰</span> Ver todas las herramientas</a>
+</div></div>
+<a class="nav-link" href="blog.html">Blog</a>
+<a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+<a class="nav-link" href="contacto.html">Contacto</a>
+</nav>
+<a class="btn-cta" href="herramientas.html">Más Herramientas</a>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></button>
+</div></div>
+</header>
+<nav aria-label="Menú móvil" class="mobile-nav" id="mobile-nav"><a class="mobile-nav-link" href="index.html">Inicio</a><a class="mobile-nav-link" href="herramientas.html">Herramientas</a><a class="mobile-nav-link" href="blog.html">Blog</a><a class="mobile-nav-link" href="sobre-nosotros.html">Nosotros</a><a class="mobile-nav-link" href="contacto.html">Contacto</a></nav>
+<nav aria-label="Breadcrumb" class="breadcrumb">
+<div class="container">
+<ol class="breadcrumb-list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="index.html" itemprop="item"><span itemprop="name">Inicio</span></a><meta content="1" itemprop="position"/></li>
+<span aria-hidden="true" class="breadcrumb-sep">›</span>
+<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="herramientas.html" itemprop="item"><span itemprop="name">Herramientas</span></a><meta content="2" itemprop="position"/></li>
+<span aria-hidden="true" class="breadcrumb-sep">›</span>
+<li class="breadcrumb-item current" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span itemprop="name">Generador de Contraseñas</span><meta content="3" itemprop="position"/></li>
+</ol>
+</div>
+</nav>
+<main id="main-content">
+<div class="page-header">
+<div class="container">
+<h1>Generador de Contraseñas Seguras Online</h1>
+<p>Genera contraseñas aleatorias con Web Crypto API directamente en tu navegador. Sin registro, sin almacenamiento, completamente gratis.</p>
+</div>
+</div>
+<section class="tool-page">
+<div class="container">
+<div class="tool-page-inner">
+<div class="tool-main">
+<div class="calc-card">
+<h2>🔐 Generar Contraseña Segura</h2>
+<form id="pwd-form" novalidate="">
+<!-- Length slider -->
+<div class="form-group">
+<label class="form-label" for="pwd-length">Longitud de la contraseña</label>
+<div class="pwd-length-row">
+<input aria-valuemax="64" aria-valuemin="15" aria-valuenow="16" id="pwd-length" max="64" min="15" step="1" type="range" value="18"/>
+<span id="pwd-length-display">16</span>
+<span style="font-size:.8125rem;color:var(--text-muted);">caracteres</span>
+</div>
+</div>
+<!-- Checkboxes -->
+<div class="form-group">
+<label class="form-label">Tipos de caracteres</label>
+<div class="pwd-checkbox-grid">
+<label class="pwd-checkbox-item">
+<input checked="" id="pwd-upper" type="checkbox"/>
+<span>A–Z Mayúsculas</span>
+</label>
+<label class="pwd-checkbox-item">
+<input checked="" id="pwd-lower" type="checkbox"/>
+<span>a–z Minúsculas</span>
+</label>
+<label class="pwd-checkbox-item">
+<input checked="" id="pwd-numbers" type="checkbox"/>
+<span>0–9 Números</span>
+</label>
+<label class="pwd-checkbox-item">
+<input checked="" id="pwd-symbols" type="checkbox"/>
+<span>!@# Símbolos</span>
+</label>
+</div>
+</div>
+<button class="btn btn-primary btn-full" id="pwd-generate-btn" type="submit">
+                🔐 Generar Contraseña
+              </button>
+</form>
+<!-- Result -->
+<div id="pwd-result" style="display:none;margin-top:20px;">
+<div class="pwd-output-box">
+<span aria-label="Contraseña generada" aria-live="polite" id="pwd-output"></span>
+</div>
+<!-- Strength meter -->
+<div class="pwd-strength-wrap">
+<div class="pwd-strength-track"><div id="pwd-strength-bar"></div></div>
+<div class="pwd-strength-label">
+<span style="color:var(--text-muted);font-size:.8125rem;">Seguridad:</span>
+<span id="pwd-strength-text" style="font-weight:600;font-size:.8125rem;"></span>
+</div>
+</div>
+<div class="btn-group">
+<button class="btn btn-primary" id="pwd-copy-btn" style="flex:1;">📋 Copiar</button>
+<button class="btn btn-secondary" id="pwd-regen-btn" style="flex:1;">🔄 Otra Contraseña</button>
+</div>
+<div class="info-box" style="margin-top:16px;">
+<span class="info-icon">🔒</span>
+<div class="info-text">La contraseña se genera en tu dispositivo usando <strong>Web Crypto API</strong>. Nunca se envía a ningún servidor.</div>
+</div>
+</div>
+</div>
+<article class="content-article">
+<h2>¿Por Qué Necesitas Contraseñas Seguras?</h2>
+<p>En la era digital, una contraseña débil es la principal puerta de entrada para ciberataques. Más del 80% de las brechas de seguridad están relacionadas con contraseñas comprometidas o reutilizadas. Una contraseña segura es tu primera línea de defensa.</p>
+<h2>¿Cómo Funciona el Generador de Contraseñas de TIODR?</h2>
+<p>Nuestro generador utiliza la <strong>Web Crypto API</strong> del navegador, que es criptográficamente segura. A diferencia de los generadores basados en <code>Math.random()</code>, que son predecibles, <code>crypto.getRandomValues()</code> produce valores verdaderamente aleatorios e impredecibles. Todo el proceso ocurre en tu dispositivo: ningún dato sale a internet.</p>
+<h3>Características del generador</h3>
+<ul>
+<li>✅ <strong>Criptográficamente seguro</strong> — usa Web Crypto API</li>
+<li>✅ <strong>100% local</strong> — la contraseña nunca abandona tu dispositivo</li>
+<li>✅ <strong>Personalizable</strong> — de 15 a 64 caracteres, con o sin símbolos</li>
+<li>✅ <strong>Indicador de fortaleza</strong> — visualiza qué tan segura es</li>
+<li>✅ <strong>Un clic para copiar</strong> — al portapapeles al instante</li>
+</ul>
+<h2>Consejos para Contraseñas Más Seguras</h2>
+<h3>Longitud sobre complejidad</h3>
+<p>Una contraseña de 16 caracteres con solo minúsculas es estadísticamente más difícil de descifrar que una de 8 caracteres con símbolos. Prioriza la longitud.</p>
+<h3>Una contraseña única por servicio</h3>
+<p>Nunca reutilices contraseñas. Si una cuenta es comprometida, todas las que usan la misma contraseña quedan expuestas. Usa un gestor de contraseñas como Bitwarden o 1Password para guardarlas de forma segura.</p>
+<h3>Activa la autenticación de dos factores (2FA)</h3>
+<p>Incluso con una contraseña fuerte, el 2FA añade una capa extra de seguridad. Es la combinación más efectiva contra el acceso no autorizado.</p>
+<div class="info-box">
+<span class="info-icon">💡</span>
+<div class="info-text"><strong>Tip:</strong> Para cuentas bancarias, correo principal y redes sociales, usa contraseñas de al menos 16 caracteres con todos los tipos de caracteres activados.</div>
+</div>
+
+<h2>Cómo se genera cada contraseña</h2>
+<p>El generador usa la función criptográfica del navegador (<code>crypto.getRandomValues</code>) y un método de muestreo que evita sesgos al elegir caracteres. Si marcas varios tipos (mayúsculas, minúsculas, números y símbolos), la contraseña incluye al menos uno de cada uno y luego se mezcla al azar. La longitud va de 15 a 64 caracteres. Todo ocurre en tu dispositivo: no se envía ni se guarda en ningún servidor.</p>
+<h2>Qué hacer después de generarla</h2>
+<ul>
+<li>Guárdala en un gestor de contraseñas en lugar de memorizarla o apuntarla en un papel.</li>
+<li>Úsala solo en un servicio; si se filtra uno, los demás siguen a salvo.</li>
+<li>Activa la verificación en dos pasos en las cuentas importantes, como correo y banca.</li>
+<li>Cuando tengas que recordarla de memoria, es mejor una frase larga de varias palabras que una cadena corta con símbolos.</li>
+</ul>
+<h2>Sobre el indicador de fortaleza</h2>
+<p>La barra es una guía basada en la longitud y en los tipos de caracteres, no una medición formal de seguridad. Una contraseña generada al azar y de buena longitud es fuerte, pero sigue siendo tan vulnerable como el sitio donde la uses si ese servicio sufre una filtración.</p>
+</article>
+</div>
+<aside aria-label="Otras herramientas" class="tool-sidebar">
+<div class="sidebar-card">
+<h3>🧰 Más Herramientas</h3>
+<div class="sidebar-tools">
+<a class="sidebar-tool" href="generador-qr.html"><span class="st-icon">📱</span> Generador QR</a>
+<a class="sidebar-tool" href="contador-de-caracteres.html"><span class="st-icon">🔢</span> Contador Caracteres</a>
+<a class="sidebar-tool" href="conversor-de-texto.html"><span class="st-icon">✍️</span> Conversor de Texto</a>
+<a class="sidebar-tool" href="calculadora-de-edad.html"><span class="st-icon">🎂</span> Calculadora de Edad</a>
+<a class="sidebar-tool" href="calculadora-de-iva.html"><span class="st-icon">🧾</span> Calculadora IVA</a>
+<a class="sidebar-tool" href="herramientas.html"><span class="st-icon">🧰</span> Todas las Herramientas</a>
+</div>
+</div>
+<div class="sidebar-card">
+<h3>🔐 ¿Qué es una contraseña segura?</h3>
+<p style="font-size:.875rem;color:var(--text-secondary);line-height:1.7;">Una contraseña segura tiene: al menos 12 caracteres, mezcla de mayúsculas, minúsculas, números y símbolos, y es única para cada servicio.</p>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-pwd-heading" class="faq-section">
+<div class="container">
+<div class="section-header">
+<h2 id="faq-pwd-heading">Preguntas Frecuentes sobre Contraseñas Seguras</h2>
+</div>
+<div class="faq-list">
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Es seguro usar este generador? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Sí. El generador usa <code>crypto.getRandomValues()</code>, la API criptográfica del navegador, que produce números genuinamente aleatorios. Las contraseñas se generan y permanecen en tu dispositivo — nunca las enviamos a ningún servidor ni las almacenamos.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Qué longitud de contraseña recomiendas? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Para cuentas normales, 12 caracteres es el mínimo aceptable. Para cuentas críticas (banca, correo, redes sociales), recomendamos 16 a 20 caracteres. Si usas un gestor de contraseñas, ve directamente a 24+ caracteres sin preocuparte por memorizarlas.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Debo usar símbolos en mi contraseña? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Los símbolos aumentan significativamente el espacio de posibilidades. Sin embargo, algunos servicios no los aceptan. Si el servicio lo permite, añadir símbolos siempre mejora la seguridad. Si no, compensa con mayor longitud.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Cómo guardo las contraseñas que genero? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Recomendamos usar un gestor de contraseñas como <strong>Bitwarden</strong> (gratuito y de código abierto), <strong>1Password</strong> o <strong>KeePass</strong>. Estos guardan tus contraseñas cifradas y te permiten acceder a ellas desde cualquier dispositivo de forma segura.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Por qué no debo reutilizar contraseñas? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Cuando un servicio es hackeado, los atacantes prueban esas credenciales en otros sitios (credential stuffing). Si usas la misma contraseña en Gmail y en una tienda online pequeña que fue comprometida, tu Gmail también está en riesgo. Contraseña única = riesgo aislado.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="related-reading-title" class="related-reading"><div class="container"><h2 id="related-reading-title">Guía relacionada</h2><p>Aprende a utilizar esta herramienta con ejemplos y explicaciones paso a paso.</p><a href="guia-contrasenas-seguras.html">Cómo crear contraseñas seguras y fáciles de gestionar →</a></div></section><section class="section"><div class="container"><h2>Consejos de seguridad</h2><p><a href="guia-contrasenas-seguras.html">Cómo crear contraseñas seguras y fáciles de gestionar</a></p></div></section><section class="section"><div class="container"><h2>Aprende más</h2><p><a href="como-elegir-contrasena-segura.html">Guía para elegir contraseñas seguras</a></p><p>Visita también el <a href="blog.html">blog de TIODR</a> para consultar guías prácticas.</p></div></section></main>
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+<div class="footer-inner">
+<div class="footer-brand">
+<a aria-label="TIODR inicio" class="logo" href="/">
+<img alt="TIODR — Herramientas digitales gratuitas" class="logo-image" decoding="async" height="48" loading="lazy" src="/img/logo-header.webp" width="100"/>
+</a>
+<p>Herramientas online gratuitas, calculadoras, conversores, generadores y guías prácticas. Todo en un solo sitio.</p>
+</div>
+<div class="footer-col">
+<h4>Explorar</h4>
+<nav aria-label="Explorar" class="footer-links">
+<a class="footer-link" href="/">Inicio</a>
+<a class="footer-link" href="/herramientas.html">Herramientas</a>
+<a class="footer-link" href="/blog.html">Blog</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>Herramientas</h4>
+<nav aria-label="Herramientas" class="footer-links">
+<a class="footer-link" href="/calculadora-de-edad.html">Calculadora de Edad</a>
+<a class="footer-link" href="/calculadora-de-porcentajes.html">Porcentajes</a>
+<a class="footer-link" href="/calculadora-de-descuentos.html">Descuentos</a>
+<a class="footer-link" href="/calculadora-de-iva.html">IVA</a>
+<a class="footer-link" href="/generador-qr.html">Generador QR</a>
+<a class="footer-link" href="/generador-contrasenas.html">Contraseñas</a>
+<a class="footer-link" href="/contador-de-caracteres.html">Contador de Caracteres</a>
+<a class="footer-link" href="/conversor-de-texto.html">Conversor de Texto</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>TIODR</h4>
+<nav aria-label="Sobre TIODR" class="footer-links">
+<a class="footer-link" href="/sobre-nosotros.html">Sobre nosotros</a>
+<a class="footer-link" href="/contacto.html">Contacto</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>Legal</h4>
+<nav aria-label="Legal" class="footer-links">
+<a class="footer-link" href="/politica-de-privacidad.html">Política de privacidad</a>
+<a class="footer-link" href="/politica-de-cookies.html">Política de cookies</a>
+<a class="footer-link" href="/terminos-y-condiciones.html">Términos y condiciones</a>
+<a class="footer-link" href="/aviso-legal.html">Aviso legal</a>
+</nav>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 TIODR. Todos los derechos reservados.</p>
+<div class="footer-bottom-links"><a data-cookie-settings="" href="javascript:Cookiebot.renew()">Preferencias de cookies</a></div>
+</div>
+</div>
+</footer>
+<script defer="" src="script.js"></script>
+</body>
+</html>

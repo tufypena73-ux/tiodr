@@ -1,0 +1,21 @@
+TIODR — ACTUALIZACIÓN DE IDENTIDAD PARA GOOGLE
+Fecha: 15-11-2026
+Archivo de origen: DOC-20261114-WA0004.zip
+
+CAMBIOS REALIZADOS
+1. Se añadió la propiedad logo al objeto Organization (publisher) del JSON-LD WebSite en index.html.
+2. Se añadió/actualizó el mismo identificador de organización y la propiedad logo en el marcado Organization de sobre-nosotros.html.
+3. Se añadió og:site_name = TIODR en la portada si no existía.
+4. Se utilizó el recurso existente https://www.tiodr.site/img/favicon-512.png como logo estructurado: imagen PNG cuadrada de 512 x 512 píxeles.
+5. Se conservaron los favicons existentes y sus rutas estables: /favicon.ico, /img/favicon-32.png, /img/favicon-192.png y /img/apple-touch-icon.png.
+6. No se modificaron herramientas, artículos, enlaces, CSS, JavaScript, middleware ni configuración del hosting.
+
+VALIDACIÓN
+- JSON-LD de index.html y sobre-nosotros.html parsea correctamente como JSON.
+- El archivo img/favicon-512.png existe en el paquete y mide 512 x 512.
+- Se conservaron todos los archivos originales.
+
+IMPORTANTE SOBRE GOOGLE
+El pequeño icono junto al resultado orgánico es el favicon; el marcado Organization.logo ayuda a Google a entender qué imagen representa la organización y puede usarse en elementos visuales como paneles de conocimiento. Google decide automáticamente qué mostrar y no garantiza que el logo aparezca en cada resultado. Tras desplegar, inspecciona la URL de la portada en Search Console y solicita indexación. Google puede tardar varios días o semanas en volver a rastrear y procesar el cambio.
+
+No se garantiza una aparición inmediata del logo en resultados de búsqueda.

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<script data-blockingmode="auto" data-cbid="eee4be27-d2bf-48fd-baf1-170a85f7ed45" data-culture="es" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" type="text/javascript"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contador de Caracteres y Palabras Online | TIODR</title>
+<meta content="Cuenta caracteres con y sin espacios, palabras, líneas, oraciones y tiempo de lectura al instante. Útil para X, SEO y formularios. Gratis y sin registro." name="description"/>
+<meta content="contador de caracteres, contar palabras online, contador palabras, contador caracteres gratis, contar letras texto" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.tiodr.site/contador-de-caracteres.html" rel="canonical"/>
+<meta content="Contador de Caracteres y Palabras Online | TIODR" property="og:title"/>
+<meta content="Cuenta caracteres con y sin espacios, palabras, líneas, oraciones y tiempo de lectura al instante. Útil para X, SEO y formularios. Gratis y sin registro." property="og:description"/>
+<meta content="https://www.tiodr.site/contador-de-caracteres.html" property="og:url"/>
+<meta content="TIODR" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.tiodr.site/img/og-tiodr.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://www.tiodr.site/img/og-tiodr.png" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Contador de Caracteres y Palabras Online | TIODR" name="twitter:title"/>
+<meta content="Cuenta caracteres con y sin espacios, palabras, líneas, oraciones y tiempo de lectura al instante. Útil para X, SEO y formularios. Gratis y sin registro." name="twitter:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .stat-card {
+      background: var(--bg-secondary);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 12px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .stat-card:hover { border-color: var(--primary); box-shadow: var(--shadow-sm); }
+    .stat-value {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.1;
+      display: block;
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-label {
+      font-size: .75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-top: 4px;
+      display: block;
+    }
+    .twitter-indicator {
+      background: var(--bg-secondary);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .twitter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .twitter-track {
+      height: 6px;
+      background: var(--border);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+    #twitter-bar {
+      height: 100%;
+      width: 0;
+      background: var(--primary);
+      border-radius: var(--radius-full);
+      transition: width .2s ease, background .2s ease;
+    }
+    #char-input {
+      min-height: 200px;
+      resize: vertical;
+      font-size: .9375rem;
+      line-height: 1.7;
+    }
+    .char-toolbar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+  </style>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Contador de Caracteres y Palabras","description":"Cuenta caracteres, palabras, líneas, oraciones y tiempo de lectura en tiempo real. Con indicador para X/X.","url":"https://www.tiodr.site/contador-de-caracteres.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.tiodr.site/"},{"@type":"ListItem","position":2,"name":"Herramientas","item":"https://www.tiodr.site/herramientas.html"},{"@type":"ListItem","position":3,"name":"Contador de Caracteres","item":"https://www.tiodr.site/contador-de-caracteres.html"}]}
+  </script>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuántos caracteres permite X/X?","acceptedAnswer":{"@type":"Answer","text":"X/X permite un máximo de 280 caracteres por tuit. Nuestro contador incluye un indicador visual en tiempo real para que puedas controlar el límite exacto mientras escribes."}},{"@type":"Question","name":"¿Cuántas palabras debe tener un artículo SEO?","acceptedAnswer":{"@type":"Answer","text":"Para SEO, los artículos de blog suelen rendir mejor entre 1.000 y 2.500 palabras, dependiendo de la competencia del tema. Para fragmentos destacados, entre 40 y 60 palabras suele ser el rango óptimo."}}]}
+  </script>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/img/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/img/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+</head>
+<body>
+<header class="site-header" role="banner">
+<div class="container"><div class="header-inner">
+<a aria-label="TIODR - Inicio" class="logo" href="index.html"><img alt="TIODR — Herramientas digitales gratuitas" class="logo-image" decoding="async" fetchpriority="high" height="48" src="/img/logo-header.webp" width="100"/></a>
+<nav aria-label="Navegación principal" class="main-nav">
+<a class="nav-link" href="index.html">Inicio</a>
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" type="button">Herramientas <span class="chevron">▾</span></button>
+<div class="dropdown-menu" role="menu">
+<a class="dropdown-item" href="calculadora-de-edad.html" role="menuitem"><span class="di-icon">🎂</span> Calculadora de Edad</a>
+<a class="dropdown-item" href="calculadora-de-porcentajes.html" role="menuitem"><span class="di-icon">📊</span> Calculadora de Porcentajes</a>
+<a class="dropdown-item" href="calculadora-de-descuentos.html" role="menuitem"><span class="di-icon">🏷️</span> Calculadora de Descuentos</a>
+<a class="dropdown-item" href="calculadora-de-iva.html" role="menuitem"><span class="di-icon">🧾</span> Calculadora de IVA e ITBIS</a>
+<a class="dropdown-item" href="generador-qr.html" role="menuitem"><span class="di-icon">📱</span> Generador QR</a>
+<a class="dropdown-item" href="generador-contrasenas.html" role="menuitem"><span class="di-icon">🔐</span> Generador de Contraseñas</a>
+<a class="dropdown-item" href="contador-de-caracteres.html" role="menuitem"><span class="di-icon">🔢</span> Contador de Caracteres</a>
+<a class="dropdown-item" href="conversor-de-texto.html" role="menuitem"><span class="di-icon">✍️</span> Conversor de Texto</a>
+<a class="dropdown-item" href="herramientas.html" role="menuitem"><span class="di-icon">🧰</span> Ver todas las herramientas</a>
+</div></div>
+<a class="nav-link" href="blog.html">Blog</a>
+<a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+<a class="nav-link" href="contacto.html">Contacto</a>
+</nav>
+<a class="btn-cta" href="herramientas.html">Más Herramientas</a>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></button>
+</div></div>
+</header>
+<nav aria-label="Menú móvil" class="mobile-nav" id="mobile-nav"><a class="mobile-nav-link" href="index.html">Inicio</a><a class="mobile-nav-link" href="herramientas.html">Herramientas</a><a class="mobile-nav-link" href="blog.html">Blog</a><a class="mobile-nav-link" href="sobre-nosotros.html">Nosotros</a><a class="mobile-nav-link" href="contacto.html">Contacto</a></nav>
+<nav aria-label="Breadcrumb" class="breadcrumb">
+<div class="container">
+<ol class="breadcrumb-list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="index.html" itemprop="item"><span itemprop="name">Inicio</span></a><meta content="1" itemprop="position"/></li>
+<span aria-hidden="true" class="breadcrumb-sep">›</span>
+<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="herramientas.html" itemprop="item"><span itemprop="name">Herramientas</span></a><meta content="2" itemprop="position"/></li>
+<span aria-hidden="true" class="breadcrumb-sep">›</span>
+<li class="breadcrumb-item current" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span itemprop="name">Contador de Caracteres</span><meta content="3" itemprop="position"/></li>
+</ol>
+</div>
+</nav>
+<main id="main-content">
+<div class="page-header">
+<div class="container">
+<h1>Contador de Caracteres y Palabras Online</h1>
+<p>Escribe o pega tu texto y obtén al instante el conteo de caracteres, palabras, líneas, oraciones y tiempo estimado de lectura. Con indicador para X/X.</p>
+</div>
+</div>
+<section class="tool-page">
+<div class="container">
+<div class="tool-page-inner">
+<div class="tool-main">
+<div class="calc-card">
+<h2>🔢 Contador de Caracteres en Tiempo Real</h2>
+<!-- Toolbar -->
+<div class="char-toolbar">
+<button class="btn btn-secondary" id="char-clear-btn" style="font-size:.875rem;padding:8px 14px;">🗑️ Limpiar</button>
+<button class="btn btn-secondary" id="char-copy-btn" style="font-size:.875rem;padding:8px 14px;">📋 Copiar texto</button>
+</div>
+<textarea aria-label="Texto para contar caracteres y palabras" class="form-input" id="char-input" placeholder="Escribe o pega tu texto aquí... Las estadísticas se actualizan en tiempo real mientras escribes."></textarea>
+<!-- Stats grid -->
+<div aria-atomic="true" aria-live="polite" class="stat-grid">
+<div class="stat-card">
+<span class="stat-value" id="char-count">0</span>
+<span class="stat-label">Caracteres</span>
+</div>
+<div class="stat-card">
+<span class="stat-value" id="char-count-nospace">0</span>
+<span class="stat-label">Sin espacios</span>
+</div>
+<div class="stat-card">
+<span class="stat-value" id="word-count">0</span>
+<span class="stat-label">Palabras</span>
+</div>
+<div class="stat-card">
+<span class="stat-value" id="line-count">0</span>
+<span class="stat-label">Líneas</span>
+</div>
+<div class="stat-card">
+<span class="stat-value" id="sentence-count">0</span>
+<span class="stat-label">Oraciones</span>
+</div>
+<div class="stat-card">
+<span class="stat-value" id="para-count">0</span>
+<span class="stat-label">Párrafos</span>
+</div>
+<div class="stat-card" style="grid-column: span 2;">
+<span class="stat-value" id="reading-time" style="font-size:1.25rem;">0s</span>
+<span class="stat-label">Tiempo de lectura</span>
+</div>
+</div>
+<!-- X indicator -->
+<div class="twitter-indicator">
+<div class="twitter-header">
+<span style="font-size:.875rem;font-weight:600;color:var(--text-secondary);">🐦 Límite X/X</span>
+<span id="twitter-count" style="font-size:.875rem;font-weight:700;color:var(--text-muted);">0/280</span>
+</div>
+<div class="twitter-track"><div id="twitter-bar"></div></div>
+</div>
+</div>
+<article class="content-article">
+<h2>¿Para Qué Sirve un Contador de Caracteres?</h2>
+<p>El contador de caracteres es una herramienta esencial para escritores, community managers, redactores SEO, desarrolladores y cualquier persona que trabaje con texto. Te permite controlar la longitud exacta de tus textos para cumplir con los límites de distintas plataformas y formatos.</p>
+<h2>Límites de Caracteres por Plataforma</h2>
+<h3>Redes Sociales</h3>
+<ul>
+<li><strong>X/X:</strong> 280 caracteres por tuit</li>
+<li><strong>Instagram:</strong> 2.200 caracteres en caption; 150 en bio</li>
+<li><strong>LinkedIn:</strong> 3.000 caracteres en publicaciones; 2.000 en artículos</li>
+<li><strong>Facebook:</strong> 63.206 caracteres (aunque lo ideal es menos de 400)</li>
+<li><strong>TikTok:</strong> 2.200 caracteres en descripción</li>
+</ul>
+<h3>SEO y Meta Etiquetas</h3>
+<ul>
+<li><strong>Meta Title:</strong> 50–60 caracteres recomendados</li>
+<li><strong>Meta Description:</strong> 150–160 caracteres recomendados</li>
+<li><strong>H1:</strong> Idealmente bajo 70 caracteres</li>
+<li><strong>URL amigable:</strong> Menos de 75 caracteres</li>
+</ul>
+<h3>SMS y Mensajería</h3>
+<ul>
+<li><strong>SMS estándar:</strong> 160 caracteres (mensajes más largos se dividen)</li>
+<li><strong>WhatsApp:</strong> 65.536 caracteres máximo</li>
+</ul>
+<div class="info-box">
+<span class="info-icon">💡</span>
+<div class="info-text"><strong>Para SEO:</strong> Mantén tu meta title entre 50-60 caracteres y tu meta description entre 150-160 caracteres para evitar que Google los trunque en los resultados de búsqueda. Usa este contador para verificarlo.</div>
+</div>
+<h2>¿Cuántas Palabras Debe Tener un Artículo?</h2>
+<p>Para SEO, la extensión ideal varía según el tipo de contenido. Los artículos informativos largos (1.500–2.500 palabras) suelen posicionar mejor para keywords competitivas. Los artículos de definición o respuesta rápida pueden ser efectivos con 600–1.000 palabras. Un post de blog conversacional funciona bien entre 800 y 1.200 palabras.</p>
+<p>También puedes usar el <a href="conversor-de-texto.html">Conversor de Texto</a> para formatear tu contenido una vez terminado.</p>
+
+<h2>Cómo cuenta cada dato esta herramienta</h2>
+<ul>
+<li><strong>Caracteres:</strong> se cuentan caracteres visibles (un emoji o una letra con tilde cuentan como uno) y se muestran con y sin espacios.</li>
+<li><strong>Palabras:</strong> son los grupos de texto separados por espacios o saltos de línea.</li>
+<li><strong>Oraciones:</strong> se estiman por los signos de cierre (. ! ?); unos puntos suspensivos seguidos cuentan como un solo cierre.</li>
+<li><strong>Tiempo de lectura:</strong> se calcula con unas 200 palabras por minuto, un promedio orientativo.</li>
+</ul>
+<h2>Cuándo conviene contar por plataforma</h2>
+<p>Las plataformas pueden contar de forma distinta los enlaces, emojis o caracteres especiales. Si un texto está muy cerca del límite de una red social o de un formulario, deja margen y haz una prueba real antes de publicar. El indicador de 280 caracteres es una referencia para X en su límite estándar; algunas cuentas tienen límites distintos.</p>
+<h2>Privacidad del texto</h2>
+<p>El texto se procesa en tu navegador mientras escribes y no se envía a ningún servidor. Al cerrar o recargar la página se pierde, así que copia lo que necesites conservar.</p>
+</article>
+</div>
+<aside aria-label="Otras herramientas" class="tool-sidebar">
+<div class="sidebar-card">
+<h3>🧰 Más Herramientas</h3>
+<div class="sidebar-tools">
+<a class="sidebar-tool" href="conversor-de-texto.html"><span class="st-icon">✍️</span> Conversor de Texto</a>
+<a class="sidebar-tool" href="generador-contrasenas.html"><span class="st-icon">🔐</span> Contraseñas</a>
+<a class="sidebar-tool" href="generador-qr.html"><span class="st-icon">📱</span> Generador QR</a>
+<a class="sidebar-tool" href="calculadora-de-edad.html"><span class="st-icon">🎂</span> Calculadora de Edad</a>
+<a class="sidebar-tool" href="herramientas.html"><span class="st-icon">🧰</span> Todas las Herramientas</a>
+</div>
+</div>
+<div class="sidebar-card">
+<h3>📏 Referencia rápida</h3>
+<ul style="list-style:none;padding:0;font-size:.8125rem;color:var(--text-secondary);line-height:2;">
+<li>🐦 X: <strong>280</strong> chars</li>
+<li>📧 Meta title: <strong>60</strong> chars</li>
+<li>📝 Meta desc: <strong>160</strong> chars</li>
+<li>📱 SMS: <strong>160</strong> chars</li>
+<li>📸 Instagram bio: <strong>150</strong> chars</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-char-heading" class="faq-section">
+<div class="container">
+<div class="section-header">
+<h2 id="faq-char-heading">Preguntas Frecuentes sobre el Contador de Caracteres</h2>
+</div>
+<div class="faq-list">
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Los espacios cuentan como caracteres? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Depende de la plataforma. X/X sí cuenta los espacios. Por eso mostramos tanto el total de caracteres (con espacios) como el total sin espacios. Consulta siempre la documentación de la plataforma que estés usando.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Cómo se calcula el tiempo de lectura? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>El tiempo de lectura se calcula asumiendo una velocidad de lectura promedio de 200 palabras por minuto, que es el ritmo típico de un lector adulto en español. Para textos técnicos o académicos, el tiempo real puede ser mayor.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Funciona con texto en español, acentos y ñ? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Sí. El contador usa JavaScript estándar con soporte completo Unicode. Letras acentuadas (á, é, í, ó, ú), ñ, ü y cualquier carácter especial se cuentan correctamente como un solo carácter.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Hay límite de texto que puedo pegar? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>No hay un límite definido — la herramienta funciona con textos de cualquier tamaño, desde un tuit de 280 caracteres hasta artículos largos de miles de palabras. El conteo se actualiza instantáneamente mientras escribes o pegas.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Se guarda el texto que escribo? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>No. Todo el procesamiento ocurre en tu navegador y el texto nunca se envía a ningún servidor. Al cerrar o recargar la página, el texto desaparece. Tu privacidad está completamente protegida.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="related-reading-title" class="related-reading"><div class="container"><h2 id="related-reading-title">Guía relacionada</h2><p>Aprende a utilizar esta herramienta con ejemplos y explicaciones paso a paso.</p><a href="meta-title-meta-description.html">Cómo escribir un buen título SEO y una meta descripción útil →</a></div></section><section class="section"><div class="container"><h2>Guía de escritura</h2><p><a href="contar-caracteres-palabras-espacios.html">Cómo contar caracteres, palabras y espacios correctamente</a></p></div></section></main>
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+<div class="footer-inner">
+<div class="footer-brand">
+<a aria-label="TIODR inicio" class="logo" href="/">
+<img alt="TIODR — Herramientas digitales gratuitas" class="logo-image" decoding="async" height="48" loading="lazy" src="/img/logo-header.webp" width="100"/>
+</a>
+<p>Herramientas online gratuitas, calculadoras, conversores, generadores y guías prácticas. Todo en un solo sitio.</p>
+</div>
+<div class="footer-col">
+<h4>Explorar</h4>
+<nav aria-label="Explorar" class="footer-links">
+<a class="footer-link" href="/">Inicio</a>
+<a class="footer-link" href="/herramientas.html">Herramientas</a>
+<a class="footer-link" href="/blog.html">Blog</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>Herramientas</h4>
+<nav aria-label="Herramientas" class="footer-links">
+<a class="footer-link" href="/calculadora-de-edad.html">Calculadora de Edad</a>
+<a class="footer-link" href="/calculadora-de-porcentajes.html">Porcentajes</a>
+<a class="footer-link" href="/calculadora-de-descuentos.html">Descuentos</a>
+<a class="footer-link" href="/calculadora-de-iva.html">IVA</a>
+<a class="footer-link" href="/generador-qr.html">Generador QR</a>
+<a class="footer-link" href="/generador-contrasenas.html">Contraseñas</a>
+<a class="footer-link" href="/contador-de-caracteres.html">Contador de Caracteres</a>
+<a class="footer-link" href="/conversor-de-texto.html">Conversor de Texto</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>TIODR</h4>
+<nav aria-label="Sobre TIODR" class="footer-links">
+<a class="footer-link" href="/sobre-nosotros.html">Sobre nosotros</a>
+<a class="footer-link" href="/contacto.html">Contacto</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>Legal</h4>
+<nav aria-label="Legal" class="footer-links">
+<a class="footer-link" href="/politica-de-privacidad.html">Política de privacidad</a>
+<a class="footer-link" href="/politica-de-cookies.html">Política de cookies</a>
+<a class="footer-link" href="/terminos-y-condiciones.html">Términos y condiciones</a>
+<a class="footer-link" href="/aviso-legal.html">Aviso legal</a>
+</nav>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 TIODR. Todos los derechos reservados.</p>
+<div class="footer-bottom-links"><a data-cookie-settings="" href="javascript:Cookiebot.renew()">Preferencias de cookies</a></div>
+</div>
+</div>
+</footer>
+<script defer="" src="script.js"></script>
+</body>
+</html>

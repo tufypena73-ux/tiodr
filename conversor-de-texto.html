@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<script data-blockingmode="auto" data-cbid="eee4be27-d2bf-48fd-baf1-170a85f7ed45" data-culture="es" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" type="text/javascript"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Conversor de Texto: Mayúsculas y Minúsculas | TIODR</title>
+<meta content="Convierte texto a mayúsculas, minúsculas, título, oración o slug para URLs conservando tildes y la ñ. Gratis, sin registro y directo en tu navegador." name="description"/>
+<meta content="conversor de texto, texto a mayúsculas, texto a minúsculas, capitalizar texto, convertir texto online, texto a slug URL" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.tiodr.site/conversor-de-texto.html" rel="canonical"/>
+<meta content="Conversor de Texto: Mayúsculas y Minúsculas | TIODR" property="og:title"/>
+<meta content="Convierte texto a mayúsculas, minúsculas, título, oración o slug para URLs conservando tildes y la ñ. Gratis, sin registro y directo en tu navegador." property="og:description"/>
+<meta content="https://www.tiodr.site/conversor-de-texto.html" property="og:url"/>
+<meta content="TIODR" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.tiodr.site/img/og-tiodr.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://www.tiodr.site/img/og-tiodr.png" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Conversor de Texto: Mayúsculas y Minúsculas | TIODR" name="twitter:title"/>
+<meta content="Convierte texto a mayúsculas, minúsculas, título, oración o slug para URLs conservando tildes y la ñ. Gratis, sin registro y directo en tu navegador." name="twitter:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    .conv-modes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .conv-mode-btn {
+      padding: 8px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-full);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      font-size: .8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      font-family: var(--font-main);
+    }
+    .conv-mode-btn:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-light); }
+    .conv-mode-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .conv-panels {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    @media (max-width: 640px) { .conv-panels { grid-template-columns: 1fr; } }
+    .conv-panel label {
+      display: block;
+      font-weight: 600;
+      font-size: .875rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+    .conv-textarea {
+      width: 100%;
+      min-height: 160px;
+      resize: vertical;
+    }
+    .conv-meta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .conv-meta-item {
+      font-size: .8125rem;
+      color: var(--text-muted);
+    }
+    .conv-meta-item strong { color: var(--text-primary); }
+    .conv-action-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+  </style>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Conversor de Texto Online","description":"Convierte texto a mayúsculas, minúsculas, capitalizado, título, slug y más. Gratis y sin registro.","url":"https://www.tiodr.site/conversor-de-texto.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.tiodr.site/"},{"@type":"ListItem","position":2,"name":"Herramientas","item":"https://www.tiodr.site/herramientas.html"},{"@type":"ListItem","position":3,"name":"Conversor de Texto","item":"https://www.tiodr.site/conversor-de-texto.html"}]}
+  </script>
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es el formato slug para URLs?","acceptedAnswer":{"@type":"Answer","text":"Un slug es la versión de un texto adaptada para URLs. Convierte el texto a minúsculas, elimina acentos y caracteres especiales, y reemplaza los espacios con guiones. Por ejemplo, 'Cómo Crear un Blog' se convierte en 'como-crear-un-blog'. Es esencial para URLs amigables con SEO."}},{"@type":"Question","name":"¿Para qué sirve el formato de título (Title Case)?","acceptedAnswer":{"@type":"Answer","text":"El Title Case capitaliza la primera letra de cada palabra importante, siguiendo las convenciones de títulos en español e inglés. Es útil para títulos de artículos, nombres de productos, encabezados y cualquier texto que requiera un formato de título formal."}}]}
+  </script>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/img/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/img/favicon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+</head>
+<body>
+<header class="site-header" role="banner">
+<div class="container"><div class="header-inner">
+<a aria-label="TIODR - Inicio" class="logo" href="index.html"><img alt="TIODR — Herramientas digitales gratuitas" class="logo-image" decoding="async" fetchpriority="high" height="48" src="/img/logo-header.webp" width="100"/></a>
+<nav aria-label="Navegación principal" class="main-nav">
+<a class="nav-link" href="index.html">Inicio</a>
+<div class="nav-dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" type="button">Herramientas <span class="chevron">▾</span></button>
+<div class="dropdown-menu" role="menu">
+<a class="dropdown-item" href="calculadora-de-edad.html" role="menuitem"><span class="di-icon">🎂</span> Calculadora de Edad</a>
+<a class="dropdown-item" href="calculadora-de-porcentajes.html" role="menuitem"><span class="di-icon">📊</span> Calculadora de Porcentajes</a>
+<a class="dropdown-item" href="calculadora-de-descuentos.html" role="menuitem"><span class="di-icon">🏷️</span> Calculadora de Descuentos</a>
+<a class="dropdown-item" href="calculadora-de-iva.html" role="menuitem"><span class="di-icon">🧾</span> Calculadora de IVA e ITBIS</a>
+<a class="dropdown-item" href="generador-qr.html" role="menuitem"><span class="di-icon">📱</span> Generador QR</a>
+<a class="dropdown-item" href="generador-contrasenas.html" role="menuitem"><span class="di-icon">🔐</span> Generador de Contraseñas</a>
+<a class="dropdown-item" href="contador-de-caracteres.html" role="menuitem"><span class="di-icon">🔢</span> Contador de Caracteres</a>
+<a class="dropdown-item" href="conversor-de-texto.html" role="menuitem"><span class="di-icon">✍️</span> Conversor de Texto</a>
+<a class="dropdown-item" href="herramientas.html" role="menuitem"><span class="di-icon">🧰</span> Ver todas las herramientas</a>
+</div></div>
+<a class="nav-link" href="blog.html">Blog</a>
+<a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+<a class="nav-link" href="contacto.html">Contacto</a>
+</nav>
+<a class="btn-cta" href="herramientas.html">Más Herramientas</a>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menu-toggle"><span></span><span></span><span></span></button>
+</div></div>
+</header>
+<nav aria-label="Menú móvil" class="mobile-nav" id="mobile-nav"><a class="mobile-nav-link" href="index.html">Inicio</a><a class="mobile-nav-link" href="herramientas.html">Herramientas</a><a class="mobile-nav-link" href="blog.html">Blog</a><a class="mobile-nav-link" href="sobre-nosotros.html">Nosotros</a><a class="mobile-nav-link" href="contacto.html">Contacto</a></nav>
+<nav aria-label="Breadcrumb" class="breadcrumb">
+<div class="container">
+<ol class="breadcrumb-list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="index.html" itemprop="item"><span itemprop="name">Inicio</span></a><meta content="1" itemprop="position"/></li>
+<span aria-hidden="true" class="breadcrumb-sep">›</span>
+<li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="herramientas.html" itemprop="item"><span itemprop="name">Herramientas</span></a><meta content="2" itemprop="position"/></li>
+<span aria-hidden="true" class="breadcrumb-sep">›</span>
+<li class="breadcrumb-item current" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><span itemprop="name">Conversor de Texto</span><meta content="3" itemprop="position"/></li>
+</ol>
+</div>
+</nav>
+<main id="main-content">
+<div class="page-header">
+<div class="container">
+<h1>Conversor de Texto Online Gratis</h1>
+<p>Convierte tu texto a mayúsculas, minúsculas, capitalizado, título, oración, alternado, inverso o formato slug para URLs. Instantáneo y sin registro.</p>
+</div>
+</div>
+<section class="tool-page">
+<div class="container">
+<div class="tool-page-inner">
+<div class="tool-main">
+<div class="calc-card">
+<h2>✍️ Convertir Texto</h2>
+<!-- Mode selector -->
+<div aria-label="Modo de conversión" class="conv-modes" role="group">
+<button class="conv-mode-btn active" data-mode="upper">MAYÚSCULAS</button>
+<button class="conv-mode-btn" data-mode="lower">minúsculas</button>
+<button class="conv-mode-btn" data-mode="capitalize">Capitalizar</button>
+<button class="conv-mode-btn" data-mode="title">Título</button>
+<button class="conv-mode-btn" data-mode="sentence">Oración</button>
+<button class="conv-mode-btn" data-mode="alternating">AlTeRnAdO</button>
+<button class="conv-mode-btn" data-mode="inverse">iNVERSO</button>
+<button class="conv-mode-btn" data-mode="slug">slug-url</button>
+</div>
+<!-- Counters -->
+<div class="conv-meta">
+<span class="conv-meta-item">Caracteres: <strong id="conv-char-count">0</strong></span>
+<span class="conv-meta-item">Palabras: <strong id="conv-word-count">0</strong></span>
+</div>
+<!-- Text areas -->
+<div class="conv-panels">
+<div class="conv-panel">
+<label for="conv-input">Texto original</label>
+<textarea aria-label="Texto de entrada para convertir" class="form-input conv-textarea" id="conv-input" placeholder="Escribe o pega tu texto aquí..."></textarea>
+</div>
+<div class="conv-panel">
+<label for="conv-output">Resultado</label>
+<textarea aria-label="Texto convertido (resultado)" aria-live="polite" class="form-input conv-textarea" id="conv-output" placeholder="El resultado aparecerá aquí..." readonly=""></textarea>
+</div>
+</div>
+<!-- Action buttons -->
+<div class="conv-action-bar">
+<button class="btn btn-primary" id="conv-copy-btn">📋 Copiar resultado</button>
+<button class="btn btn-secondary" id="conv-swap-btn">🔄 Usar resultado como entrada</button>
+<button class="btn btn-secondary" id="conv-clear-btn">🗑️ Limpiar</button>
+</div>
+</div>
+<article class="content-article">
+<h2>Modos de Conversión Disponibles</h2>
+<h3>MAYÚSCULAS</h3>
+<p>Convierte todo el texto a letras mayúsculas. Útil para títulos, encabezados impactantes, código de programación y textos que requieren énfasis máximo.</p>
+<h3>minúsculas</h3>
+<p>Convierte todo el texto a letras minúsculas. Ideal para normalizar datos, generar handles para redes sociales o limpiar texto con capitalización mixta.</p>
+<h3>Capitalizar</h3>
+<p>Pone en mayúscula la primera letra de cada palabra. Perfecto para nombres de personas, títulos de artículos o nombres de productos.</p>
+<h3>Formato Título (Title Case)</h3>
+<p>Similar al capitalizado pero respeta las convenciones de títulos: las palabras cortas como artículos, preposiciones y conjunciones permanecen en minúscula. Recomendado para títulos de artículos y headings SEO.</p>
+<h3>Formato Oración (Sentence Case)</h3>
+<p>Pone en mayúscula solo la primera letra de cada oración, igual que en un texto normal. Ideal para limpiar texto en mayúsculas o reestructurar párrafos.</p>
+<h3>Formato Slug para URLs</h3>
+<p>Convierte el texto al formato ideal para URLs amigables: todo en minúsculas, sin acentos, sin caracteres especiales, espacios reemplazados por guiones. Ejemplo: "Cómo Crear un Blog en 2024" → "como-crear-un-blog-en-2024". Esencial para <strong>SEO on-page</strong>.</p>
+<div class="info-box">
+<span class="info-icon">💡</span>
+<div class="info-text"><strong>Para SEO:</strong> Usa el modo <em>slug-url</em> para generar URLs perfectas para tus artículos de blog. Una URL limpia sin acentos mejora el CTR y la indexación. Combínalo con el <a href="contador-de-caracteres.html">Contador de Caracteres</a> para mantener la URL bajo 75 caracteres.</div>
+</div>
+<h2>¿Para Qué Usar el Conversor de Texto?</h2>
+<ul>
+<li><strong>Redacción y edición:</strong> Corrige texto pegado de documentos con formatos incorrectos</li>
+<li><strong>Programación:</strong> Normaliza strings, genera constantes en MAYÚSCULAS o variables en minúsculas</li>
+<li><strong>SEO:</strong> Genera slugs perfectos para URLs de artículos y categorías</li>
+<li><strong>Redes sociales:</strong> Da énfasis a tus publicaciones con texto en mayúsculas o AlTeRnAdO</li>
+<li><strong>Diseño gráfico:</strong> Previsualiza cómo quedará el texto en distintos formatos</li>
+</ul>
+<p>También puedes usar el <a href="generador-contrasenas.html">Generador de Contraseñas</a> para crear claves seguras o el <a href="generador-qr.html">Generador de QR</a> para convertir tus URLs en códigos QR.</p>
+
+<h2>Qué debes revisar después de convertir</h2>
+<p>Las conversiones son automáticas y no entienden el significado del texto. Al pasar a minúsculas, «Santo Domingo» o una sigla como «ITBIS» también se vuelven minúsculas, y los modos Oración y Título las dejan con la primera letra en mayúscula. Revisa nombres propios y siglas antes de usar el resultado.</p>
+<h2>Detalles de cada modo</h2>
+<ul>
+<li><strong>Oración:</strong> pone en mayúscula la primera letra del texto y la que sigue a un punto, y respeta los signos de apertura ¿ y ¡.</li>
+<li><strong>Título:</strong> capitaliza las palabras principales y deja en minúscula artículos y preposiciones comunes (de, la, en, con…), salvo al inicio o tras un punto.</li>
+<li><strong>Slug:</strong> pasa a minúsculas, quita tildes (la ñ se convierte en n), elimina símbolos y une las palabras con guiones, ideal para direcciones web claras.</li>
+</ul>
+<h2>Privacidad</h2>
+<p>La conversión se hace en tu navegador. El texto que pegas no se envía a ningún servidor.</p>
+</article>
+</div>
+<aside aria-label="Otras herramientas" class="tool-sidebar">
+<div class="sidebar-card">
+<h3>🧰 Más Herramientas</h3>
+<div class="sidebar-tools">
+<a class="sidebar-tool" href="contador-de-caracteres.html"><span class="st-icon">🔢</span> Contador Caracteres</a>
+<a class="sidebar-tool" href="generador-contrasenas.html"><span class="st-icon">🔐</span> Contraseñas</a>
+<a class="sidebar-tool" href="generador-qr.html"><span class="st-icon">📱</span> Generador QR</a>
+<a class="sidebar-tool" href="calculadora-de-porcentajes.html"><span class="st-icon">📊</span> Porcentajes</a>
+<a class="sidebar-tool" href="herramientas.html"><span class="st-icon">🧰</span> Todas las Herramientas</a>
+</div>
+</div>
+<div class="sidebar-card">
+<h3>✍️ Referencia de modos</h3>
+<ul style="list-style:none;padding:0;font-size:.8125rem;color:var(--text-secondary);line-height:2.2;">
+<li>MAYÚSCULAS → <code>HOLA MUNDO</code></li>
+<li>minúsculas → <code>hola mundo</code></li>
+<li>Capitalizar → <code>Hola Mundo</code></li>
+<li>slug-url → <code>hola-mundo</code></li>
+<li>AlTeRnAdO → <code>hOlA mUnDo</code></li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-conv-heading" class="faq-section">
+<div class="container">
+<div class="section-header">
+<h2 id="faq-conv-heading">Preguntas Frecuentes sobre el Conversor de Texto</h2>
+</div>
+<div class="faq-list">
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Qué diferencia hay entre "Capitalizar" y "Título"? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>"Capitalizar" pone en mayúscula la primera letra de TODAS las palabras. "Título" es más inteligente: respeta las reglas de estilo y mantiene en minúscula las palabras cortas como "de", "la", "el", "y", "con", siempre que no sean la primera palabra. Ejemplo: "El Arte de la Guerra" vs "El Arte De La Guerra".</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿El conversor elimina los acentos? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Solo en el modo <strong>slug-url</strong>, donde los acentos se eliminan para generar URLs compatibles con todos los navegadores. En el resto de modos (mayúsculas, minúsculas, etc.), los acentos, ñ y demás caracteres especiales del español se conservan perfectamente.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Puedo usar el conversor para generar URLs para WordPress? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Sí. El modo "slug-url" genera exactamente el formato que usa WordPress para sus permalinks: texto en minúsculas, sin acentos, sin espacios (reemplazados por guiones). Copia el resultado directamente en el campo de permalink de tu entrada o página.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Funciona con textos largos? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>Sí, sin límite. El conversor procesa el texto en tiempo real directamente en tu navegador. Puedes pegar artículos completos, documentos extensos o cualquier cantidad de texto. La conversión es instantánea independientemente del tamaño.</p></div>
+</div>
+<div class="faq-item">
+<button aria-expanded="false" class="faq-question">¿Se guarda el texto que convierto? <span aria-hidden="true" class="faq-icon">+</span></button>
+<div class="faq-answer"><p>No. Todo el procesamiento ocurre en tu navegador y el texto nunca se envía a nuestros servidores. Al cerrar o recargar la página, el texto desaparece. Tu privacidad está completamente protegida.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="related-reading-title" class="related-reading"><div class="container"><h2 id="related-reading-title">Guía relacionada</h2><p>Aprende a utilizar esta herramienta con ejemplos y explicaciones paso a paso.</p><a href="crear-url-amigable-slug.html">Cómo crear URLs limpias y slugs fáciles de entender →</a></div></section><section class="section"><div class="container"><h2>Guía de productividad</h2><p><a href="convertir-texto-mayusculas-minusculas.html">Cómo convertir texto a mayúsculas y minúsculas</a></p></div></section></main>
+<footer class="site-footer" role="contentinfo">
+<div class="container">
+<div class="footer-inner">
+<div class="footer-brand">
+<a aria-label="TIODR inicio" class="logo" href="/">
+<img alt="TIODR — Herramientas digitales gratuitas" class="logo-image" decoding="async" height="48" loading="lazy" src="/img/logo-header.webp" width="100"/>
+</a>
+<p>Herramientas online gratuitas, calculadoras, conversores, generadores y guías prácticas. Todo en un solo sitio.</p>
+</div>
+<div class="footer-col">
+<h4>Explorar</h4>
+<nav aria-label="Explorar" class="footer-links">
+<a class="footer-link" href="/">Inicio</a>
+<a class="footer-link" href="/herramientas.html">Herramientas</a>
+<a class="footer-link" href="/blog.html">Blog</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>Herramientas</h4>
+<nav aria-label="Herramientas" class="footer-links">
+<a class="footer-link" href="/calculadora-de-edad.html">Calculadora de Edad</a>
+<a class="footer-link" href="/calculadora-de-porcentajes.html">Porcentajes</a>
+<a class="footer-link" href="/calculadora-de-descuentos.html">Descuentos</a>
+<a class="footer-link" href="/calculadora-de-iva.html">IVA</a>
+<a class="footer-link" href="/generador-qr.html">Generador QR</a>
+<a class="footer-link" href="/generador-contrasenas.html">Contraseñas</a>
+<a class="footer-link" href="/contador-de-caracteres.html">Contador de Caracteres</a>
+<a class="footer-link" href="/conversor-de-texto.html">Conversor de Texto</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>TIODR</h4>
+<nav aria-label="Sobre TIODR" class="footer-links">
+<a class="footer-link" href="/sobre-nosotros.html">Sobre nosotros</a>
+<a class="footer-link" href="/contacto.html">Contacto</a>
+</nav>
+</div>
+<div class="footer-col">
+<h4>Legal</h4>
+<nav aria-label="Legal" class="footer-links">
+<a class="footer-link" href="/politica-de-privacidad.html">Política de privacidad</a>
+<a class="footer-link" href="/politica-de-cookies.html">Política de cookies</a>
+<a class="footer-link" href="/terminos-y-condiciones.html">Términos y condiciones</a>
+<a class="footer-link" href="/aviso-legal.html">Aviso legal</a>
+</nav>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 TIODR. Todos los derechos reservados.</p>
+<div class="footer-bottom-links"><a data-cookie-settings="" href="javascript:Cookiebot.renew()">Preferencias de cookies</a></div>
+</div>
+</div>
+</footer>
+<script defer="" src="script.js"></script>
+</body>
+</html>
